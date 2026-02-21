@@ -1,0 +1,17 @@
+Entities
+Strong: Customer, Product, Campaign
+Weak: CustomerDependent
+Assosicative: Customer Campaign
+
+Relationships
+One to One: Customer to contact profile
+One to Many: Customer to Customer Dependent
+Many to Many:  Customer to CustomerCampaign to Campaign
+
+Attributes
+Identifier: Customer: CustomerID, Product: ProductID, Campaign: CampaignID, CustomerDependent: (CustomerID, DependentID), CustomerCampaign: (CustomerID, CampaignID)
+Mandatory: Customer: Year_Birth, Education, Marital_Status, Campaign: CampaignName, StartDate, CustomerCampaign: AcceptedFlag, Product: Name, Category
+Optional: Customer: Income, Complain, CustomerDependent: DependentAge, CustomerCampaign: ResponseDate
+Singlevalue:Year_Birth, Education, Income, Name, Category, DependentType, AcceptedFlag
+
+An ER Diagram to show the entites, relationships, and attributes
