@@ -1,0 +1,24 @@
+LOAD DATA INFILE 'data/customer.csv'
+INTO TABLE Customer
+FIELDS TERMINATED BY ','
+IGNORE 1 ROWS;
+
+LOAD DATA INFILE 'data/contactprofile.csv'
+INTO TABLE ContactProfile
+FIELDS TERMINATED BY ','
+IGNORE 1 ROWS;
+
+LOAD DATA INFILE 'data/campaign.csv'
+INTO TABLE Campaign
+FIELDS TERMINATED BY ','
+IGNORE 1 ROWS;
+
+LOAD DATA INFILE 'data/customerdependent.csv'
+INTO TABLE CustomerDependent
+FIELDS TERMINATED BY ','
+IGNORE 1 ROWS;
+
+LOAD DATA INFILE 'data/customercampaign.csv'
+INTO TABLE CustomerCampaign
+FIELDS TERMINATED BY ','
+IGNORE 1 ROWS;
